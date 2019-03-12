@@ -41,6 +41,8 @@ const InputText = styled.input`
 `
 
 class TextField extends Component {
+  state = {}
+
   componentDidMount() {
     const { focus } = this.props
     if (focus) {
