@@ -1,7 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Provider from 'components/Provider'
+import App from 'components/App'
 
 ReactDOM.render(
-  <div>foi</div>,
+  <Provider>
+    <App />
+  </Provider>,
   document.getElementById('root'),
 )

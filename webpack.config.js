@@ -1,5 +1,6 @@
 const HtmlPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -23,6 +24,10 @@ module.exports = {
               ],
               '@babel/preset-react',
             ],
+            plugins: [
+              '@babel/plugin-syntax-dynamic-import',
+              '@babel/plugin-proposal-class-properties',
+            ],
           },
         },
       },
@@ -44,6 +49,12 @@ module.exports = {
     new HtmlPlugin({
       title: 'Ingaia',
       template: 'src/index.html',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+      },
     }),
+    new CopyPlugin([
+      { from: 'src/assets', to: 'assets' },
+    ]),
   ],
 }

@@ -29,5 +29,13 @@ module.exports = {
     "import/prefer-default-export": 0,
     "react/destructuring-assignment": 0,
     "react/no-array-index-key": 0,
+    "no-return-assign": 0,
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src']
+      }
+    }
+  }
 };
