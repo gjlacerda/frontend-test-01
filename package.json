@@ -6,7 +6,8 @@
   "author": "Guilherme Lacerda <guilherme.lcd@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "node src/server.js",
+    "start:dev": "webpack-dev-server --mode development",
     "test": "jest src",
     "build": "webpack --mode production",
     "eslint": "eslint webpack.config.js src",
@@ -40,6 +41,8 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-redux": "^6.0.1",
@@ -54,5 +57,8 @@
     "hooks": {
       "pre-commit": "yarn eslint"
     }
+  },
+  "engines": {
+    "node": "11.x"
   }
 }
