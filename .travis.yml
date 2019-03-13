@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 11
+cache:
+  directories:
+    - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: 88d08eca-dce9-4886-96e1-ba254e77604c
+  app: front-end-test-01
+  on:
+    repo: gjlacerda/frontend-test-01
+before_script:
+  - yarn build

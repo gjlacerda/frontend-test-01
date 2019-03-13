@@ -9,7 +9,8 @@
     "start": "webpack-dev-server --mode development",
     "test": "jest src",
     "build": "webpack --mode production",
-    "eslint": "eslint webpack.config.js src"
+    "eslint": "eslint webpack.config.js src",
+    "postinstall": "yarn build"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
