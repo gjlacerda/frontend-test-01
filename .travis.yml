@@ -11,5 +11,3 @@ deploy:
   app: front-end-test-01
   on:
     repo: gjlacerda/frontend-test-01
-before_script:
-  - yarn build
