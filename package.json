@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development",
+    "test": "jest src",
     "build": "webpack --mode production",
     "eslint": "eslint webpack.config.js src"
   },
@@ -14,6 +15,7 @@
     "@babel/core": "^7.3.4",
     "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
@@ -29,6 +31,7 @@
     "eslint-plugin-react": "^7.12.4",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.3.1",
     "jest": "^24.1.0",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
@@ -43,5 +46,10 @@
     "redux-thunk": "^2.3.0",
     "styled-components": "^4.1.3",
     "styled-normalize": "^8.0.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn eslint"
+    }
   }
 }
