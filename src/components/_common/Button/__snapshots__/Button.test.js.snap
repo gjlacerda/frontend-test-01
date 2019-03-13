@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component deve ser igual ao snapshot 1`] = `
+.c0 {
+  border: 1px solid #A99E7E;
+  background: none;
+  color: #A99E7E;
+  padding: 10px 30px;
+  width: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+  -webkit-transition-property: color,background-color;
+  transition-property: color,background-color;
+}
+
+.c0:hover {
+  background-color: #A99E7E;
+  color: #fff;
+}
+
+.c0:active {
+  background-color: #766f58;
+}
+
+<button
+  className="c0"
+/>
+`;
+
+exports[`Button component deve ser igual ao snapshot quando passado o parâmetro (fullWidth) 1`] = `
+.c0 {
+  border: 1px solid #A99E7E;
+  background: none;
+  color: #A99E7E;
+  padding: 10px 30px;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+  -webkit-transition-property: color,background-color;
+  transition-property: color,background-color;
+}
+
+.c0:hover {
+  background-color: #A99E7E;
+  color: #fff;
+}
+
+.c0:active {
+  background-color: #766f58;
+}
+
+<button
+  className="c0"
+/>
+`;

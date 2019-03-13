@@ -8,6 +8,7 @@ const Container = styled.div`
   margin-right: ${props => marginSize[props.marginRight]};
   margin-top: ${props => marginSize[props.marginTop]};
 `
+Container.displayName = 'Container'
 
 export default ({
   marginBottom,
