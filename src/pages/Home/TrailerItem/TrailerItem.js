@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
-import { Link, HashRouter } from 'react-router-dom'
+import { Link, BrowserRouter } from 'react-router-dom'
 import Modal from 'components/_common/Modal'
 import Trailer from 'pages/Home/Trailer'
 import { colorApp } from 'utils/color'
@@ -40,11 +40,11 @@ const LinkItem = styled(Link)`
 
 const openModal = (videoId) => {
   ReactDOM.render(
-    <HashRouter>
+    <BrowserRouter>
       <Modal>
         <Trailer videoId={videoId} />
       </Modal>
-    </HashRouter>,
+    </BrowserRouter>,
     document.getElementById('modalContainer'),
   )
 }
