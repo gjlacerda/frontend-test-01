@@ -33,6 +33,7 @@ const Label = styled.label`
 const InputText = styled.input`
   background: none;
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid ${colorApp};
   color: #fff;
   outline: none;
